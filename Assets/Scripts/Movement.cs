@@ -13,25 +13,25 @@ public class Movement : MonoBehaviour {
     void FixedUpdate()
         // I started this with only sideways and forward force but then later realised i could also make a jump/fly and drop force. 
     {
-        rb.AddForce(0, 0, forwardforce * Time.deltaTime);
+        rb.AddForce(0, 0, forwardforce * Time.deltaTime, ForceMode.VelocityChange);
 
         if (Input.GetKey("d") )
         {
-            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
+            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
         if (Input.GetKey("a") )
         {
-            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
+            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
         if (Input.GetKey("w"))
 
         {
-            rb.AddForce(0, upwardsforce, 0 * Time.deltaTime);
+            rb.AddForce(0, upwardsforce, 0 * Time.deltaTime, ForceMode.VelocityChange);
         }
         if (Input.GetKey("s"))
 
         {
-            rb.AddForce(0, downwardsforce, 0 * Time.deltaTime);
+            rb.AddForce(0, downwardsforce, 0 * Time.deltaTime, ForceMode.VelocityChange);
         }
         if (rb.position.y < -1f)
         {
