@@ -1,6 +1,6 @@
 Win
 PlayerPath?
-C:/Users/David S/Documents/Game/Builds/Windows/Cube Run V1.4 (32bit)/Game.exe
+C:/Users/David S/Documents/Game/Builds/Windows/Cube Run V1.5 (32bit)/Game.exe
 SceneListBegin?
 Assets/Scenes/Welcome.unity
 Assets/Scenes/level 1.unity
